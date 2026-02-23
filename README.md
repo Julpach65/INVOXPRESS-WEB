@@ -43,6 +43,11 @@ El proyecto está estructurado en dos componentes principales:
 
 - Julián Pacheco
 
+## Contacto
+
+Para consultas técnicas, favor de contactar a través de los canales oficiales del proyecto.
+
 ## Licencia
+
 
 Este proyecto es de uso académico y profesional.
