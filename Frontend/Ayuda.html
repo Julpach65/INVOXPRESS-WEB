@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="css/estilos.css">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   <style>
+     body {
+       font-family: 'Open Sans', sans-serif;
+       background-color: #fdfdfd;
+       color: #333;
+     }
+     section.content.cat {
+       padding: 60px 20px;
+     }
+     .content h2, .content h3 {
+       font-weight: 600;
+     }
+     aside ul li {
+       margin-bottom: 10px;
+     }
+     aside ul li a {
+       display: block;
+       padding: 10px;
+       border-radius: 5px;
+       transition: background 0.2s;
+     }
+     aside ul li a:hover {
+       background: #002B5B;
+       color: white;
+     }
+     input[type="text"] {
+       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     }
+     article p {
+       background: #f5f8fc;
+       padding: 20px;
+       border-radius: 10px;
+     }
+   </style>
+   <title>Centro de Ayuda - InvoXpress</title>
+</head>
+<body>
+  <div class="head">
+    <div class="logo">
+      <a href="Index.html">
+        <img src="images/Logo.jpg" alt="InvoXpress">
+      </a>
+    </div>
+
+    <nav class="navbar">
+      <div class="search-container">
+        <input type="text" placeholder="Buscar productos..." class="search-input">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+        <ul class="suggestions"></ul>
+      </div>
+      
+      <a href="Login.html"><i class="fas fa-user"></i> Login</a>
+      <a href="Nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+      <a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a>
+      <a href="Ayuda.html"><i class="fas fa-question-circle"></i> Ayuda</a>
+      <a href="Carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+    </nav>
+  </div>
+
+  <header class="header">
+    <div class="header-content">
+      <h2 class="title">Centro de Ayuda</h2>
+      <p>Encuentra respuestas a tus preguntas frecuentes</p>
+    </div>
+  </header>
+
+  <section class="content cat">
+    <p style="font-size: 14px; color: #666; margin-bottom: 20px;">INICIO / CENTRO DE AYUDA</p>
+    <h2 style="color: #002B5B; font-size: 28px; margin-bottom: 30px;">Hola, ¿En qué podemos ayudarte?</h2>
+    <input type="text" placeholder="Buscar temas de ayuda" style="width: 100%; max-width: 500px; padding: 12px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 40px;">
+
+    <div style="display: flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
+      <aside style="flex: 1; min-width: 250px; max-width: 300px;">
+        <h3 style="margin-bottom: 15px; color: #002B5B;">Temas de ayuda</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li><a href="#">Cuenta</a></li>
+          <li><a href="#">Pedidos</a></li>
+          <li><a href="#">Pagos</a></li>
+          <li><a href="#">Seguridad</a></li>
+          <li><a href="#">Envíos</a></li>
+        </ul>
+      </aside>
+
+      <article style="flex: 3; min-width: 300px; max-width: 800px;">
+        <h3 style="color: #002B5B; margin-bottom: 20px;">Tema seleccionado</h3>
+        <p>
+          xxxxxxxxxxxxxxxx
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Ferretería InvoXpress. Todos los derechos reservados.</p>
+      <p>Desarrollado por grupo InvoXpress</p>
+      <div class="footer-links">
+        <a href="Ayuda.html">Ayuda</a>
+        <a href="Contactanos.html">Contacto</a>
+        <a href="Nosotros.html">Nosotros</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/barraBusqueda.js"></script>
+</body>
+</html>

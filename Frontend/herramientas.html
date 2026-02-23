@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - InvoXpress</title> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    </head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/Logo.jpg" alt="InvoXpress">
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar productos..." class="search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+                <ul class="suggestions"></ul>
+            </div>
+            
+            <a href="Login.html"><i class="fas fa-user"></i> Login</a>
+            <a href="Nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+            <a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a>
+            <a href="Ayuda.html"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a href="Carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+        </nav>
+    </div>
+
+    <main class="main-content-products">
+        <div class="container">
+           
+            <div class="product-page-layout">
+                <aside class="sidebar-filters">
+                    <h3 class="filter-title">FILTRAR POR</h3>
+                    <div class="filter-section">
+                        <h4>Categoría</h4>
+                        <ul>
+                            <li><a href="productos.html">Todo ()</a></li>
+                            <li><a href="herramientas.html">Herramientas ()</a></li>
+                            <li><a href="pintura.html">Pintura ()</a></li>
+                            <li><a href="soldadura.html">Soldadura ()</a></li>
+                        </ul>
+                    </div>
+                    </aside>
+
+
+                <section class="products-display">
+                    <h1 class="page-category-title"><i class="fas fa-angle-right"></i> Herramientas</h1>
+
+                    <div class="product-controls">
+
+                        <div class="sort-options">
+                            <span>Ordenar por: </span>
+                            <select>
+                                <option value="price-asc">Precio</option>
+                                <option value="name-asc">Nombre (A-Z)</option>
+                                <option value="name-desc">Nombre (Z-A)</option>
+                            </select>
+                            <button class="sort-direction-btn"><i class="fas fa-arrow-up"></i></button>
+                            <button class="sort-direction-btn"><i class="fas fa-arrow-down"></i></button>
+                        </div>
+                        
+                        <div class="pagination-top">
+                            <a href="#" class="page-link active">1</a>
+                            <a href="#" class="page-link">2</a>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Martillo</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Lima</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Lijadora</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Sierra circular</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+                         <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Taladro</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+                         <div class="product-card">
+                            <img src="images/Herramientas.svg" alt="Lima triangular pesado, bastardas">
+                            <h3>Desatornillador</h3>
+                            <p class="product-brand">TRUPER</p>
+                            <p class="product-price">Desde: <span>$18.00</span></p>
+                            <a href="#" class="btn btn-options">Añadir al Carrito</a>
+                        </div>
+
+
+                        </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Ferretería InvoXpress. Todos los derechos reservados.</p>
+            <p>Desarrollado por grupo InvoXpress</p>
+            <div class="footer-links">
+                <a href="Ayuda.html">Ayuda</a>
+                <a href="Contactanos.html">Contacto</a>
+                <a href="Nosotros.html">Nosotros</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/barraBusqueda.js"></script>
+</body>
+</html>

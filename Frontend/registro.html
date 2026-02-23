@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro - InvoXpress</title>
+  <link rel="stylesheet" href="css/registro.css" />
+</head>
+<body class="slide-page">
+  <div class="register-wrapper">
+    <div class="register-left">
+      <img src="images/Logo.jpg" alt="Logo InvoXpress" class="register-logo" />
+      <h1>Crear cuenta en <span>InvoXpress</span></h1>
+      <p class="register-subtitle">Registra tus datos para comenzar</p>
+
+      <form id="registroForm" autocomplete="off">
+        <div class="input-group">
+          <label for="nombreUsuario">Nombre completo:</label>
+          <input type="text" id="nombreUsuario" name="nombre" placeholder="Ingresa tu nombre" required />
+        </div>
+
+        <div class="input-group">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required />
+        </div>
+
+        <div class="input-group">
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required />
+        </div>
+
+        <div class="input-group">
+          <label for="confirmarContraseña">Confirmar Contraseña:</label>
+          <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirmar Contraseña" required />
+        </div>
+
+        <button type="submit" class="btn-register">Registrar</button>
+        <p class="register-text">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+      </form>
+    </div>
+
+    <div class="register-right">
+      <img src="images/imagen_registro.jpg" alt="Imagen de fondo" class="register-bg" />
+    </div>
+  </div>
+
+  <script src="js/registro.js"></script>
+  <script>
+    window.onload = function () {
+      document.getElementById("nombreUsuario").value = "";
+      document.getElementById("correo").value = "";
+      document.getElementById("contraseña").value = "";
+      document.getElementById("confirmarContraseña").value = "";
+    };
+  </script>
+</body>
+</html>
+

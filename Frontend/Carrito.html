@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras - InvoXpress</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="carrito-body">
+
+  <header class="head">
+    <div style="display: flex; align-items: center;">
+      <div class="logo">
+  <a href="index.html">
+    <img src="images/Logo.jpg" alt="InvoXpress" style="height: 65px;">
+  </a>
+</div>
+
+      <nav class="navbar">
+        <div class="search-container">
+          <input type="text" placeholder="Buscar productos..." class="search-input">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+          <ul class="suggestions"></ul>
+        </div>
+      </nav>
+
+
+    </div>
+    <nav class="navbar">
+      <a href="productos.html"><i class="fas fa-box"></i> Productos</a>
+      <a href="Nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+      <a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a>
+      
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="carrito-section">
+      <h2>MI CARRITO</h2>
+      <div class="carrito-contenido">
+        <!-- TABLA DE PRODUCTOS -->
+        <div class="carrito-productos">
+          <table class="carrito-tabla">
+            <thead>
+              <tr>
+                <th>Artículo</th>
+                <th>ID Product</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tbody id="carrito-container">
+              <!-- Productos generados con JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- RESUMEN DEL CARRITO -->
+        <div class="carrito-resumen">
+          <h3>MI CARRITO</h3>
+          <p>ID: <span id="carrito-id"></span></p>
+          <p>Subtotal: <span id="subtotal">$0.00</span></p>
+          <p><strong>TOTAL: <span id="totalCarrito">$0.00</span></strong></p>
+          <button class="btn pagar-btn">Pagar con PAYPAL</button>
+          <div class="resumen-botones">
+            <button id="vaciarCarrito" class="btn">Vaciar carrito</button>
+            <button id="confirmarCompra" class="btn">Confirmar pedido</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ </section>
+
+
+     <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Ferretería InvoXpress. Todos los derechos reservados.</p>
+    <p>Desarrollado por grupo InvoXpress</p>
+    <div class="footer-links">
+      <a href="Ayuda.html">Ayuda</a>
+      <a href="Contactanos.html">Contacto</a>
+      <a href="Nosotros.html">Nosotros</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/barraBusqueda.js"></script>
+</body>
+</html>
+
+

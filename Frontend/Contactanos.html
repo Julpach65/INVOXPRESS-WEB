@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos - InvoXpress</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    function mostrarMensaje(event) {
+      event.preventDefault();
+      alert("Muchas gracias por contactarnos, nos comunicaremos con usted lo antes posible.");
+      event.target.reset();
+    }
+  </script>
+  <style>
+    .contact-section {
+      padding: 60px 20px;
+      background-color: #fdfdfd;
+    }
+    .contact-section h2 {
+      color: #002B5B;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .contact-section p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+    }
+    .contact-info h3 {
+      color: #002B5B;
+      margin-bottom: 15px;
+    }
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form textarea {
+      resize: vertical;
+    }
+    footer.footer {
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <div class="logo">
+      <a href="Index.html">
+        <img src="images/Logo.jpg" alt="InvoXpress">
+      </a>
+    </div>
+    <nav class="navbar">
+      <div class="search-container">
+        <input type="text" placeholder="Buscar productos..." class="search-input">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+        <ul class="suggestions"></ul>
+      </div>
+      <a href="Login.html"><i class="fas fa-user"></i> Login</a>
+      <a href="Nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+      <a href="Contactanos.html"><i class="fas fa-envelope"></i> Contáctanos</a>
+      <a href="Ayuda.html"><i class="fas fa-question-circle"></i> Ayuda</a>
+      <a href="Carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a>
+    </nav>
+  </div>
+
+  <header class="header">
+    <div class="header-content">
+      <h2 class="title">Contáctanos</h2>
+      <p>Estamos aquí para ayudarte con lo que necesites</p>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <h2>Envíanos un mensaje</h2>
+    <p>¿Tienes dudas o necesitas ayuda? Completa el formulario y te responderemos lo antes posible.</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Atención al cliente</h3>
+        <p>Lunes a Viernes 8:00 AM - 8:00 PM</p>
+        <p><strong>Tel:</strong> +52 669 1507167<br>
+        <strong>Email:</strong> contactoInvoExpress@gmail.com</p>
+      </div>
+
+      <form class="contact-form" onsubmit="mostrarMensaje(event)">
+        <label>Asunto</label>
+        <input type="text" required>
+
+        <label>Nombre</label>
+        <input type="text" required>
+
+        <label>Correo Electrónico</label>
+        <input type="email" required>
+
+        <label>Teléfono</label>
+        <input type="tel">
+
+        <label>Mensaje</label>
+        <textarea rows="5" required></textarea>
+
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Ferretería InvoXpress. Todos los derechos reservados.</p>
+      <p>Desarrollado por grupo InvoXpress</p>
+      <div class="footer-links">
+        <a href="Ayuda.html">Ayuda</a>
+        <a href="Contactanos.html">Contacto</a>
+        <a href="Nosotros.html">Nosotros</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/barraBusqueda.js"></script> 
+</body>
+</html>
